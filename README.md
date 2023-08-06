@@ -96,12 +96,37 @@ Now the boot loader is unlocked repeat [steps 1 and 2](https://github.com/whitew
 First of all, thanks to the XDADevelopers user Functioner in [this thread](https://forum.xda-developers.com/t/walmart-onn-google-tv.4586587/post-88777153)
 
 - Download [Magisk Manager 26.1](https://github.com/topjohnwu/Magisk/releases/tag/v26.1) (Current version as of 8/6/23) from [here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/67702184/32b02342-3b4d-4b65-9daf-61a08ce313c8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T202836Z&X-Amz-Expires=300&X-Amz-Signature=7db1a17a8e917b131a67ca7cfb02d0364d8bf0ab34844841fe9d40eaae8abe16&X-Amz-SignedHeaders=host&actor_id=3161177&key_id=0&repo_id=67702184&response-content-disposition=attachment%3B%20filename%3DMagisk-v26.1.apk&response-content-type=application%2Fvnd.android.package-archive)
-- 
+- Download [vendor_boot-magisk_patched-26100.img](https://github.com/whitewolf101/Onn.-4k-2023-Streaming-Box-Rooting-and-Remote-Button-Remapping/raw/main/vendor_boot-magisk_patched-26100.img)
+- Ensure your terminal is in the same location you downloaded the APK & Image to, then run
+```bash
+adb devices
+adb install Magisk-v26.1.apk
+adb reboot bootloader
+```
+- Wait for device to be stuck at 'Onn.' boot screen then run 
+```bash
+fastboot devices
+fastboot flash vendor_boot vendor_boot-magisk_patched-26100.img
+```
+Expected Result - 
+```bash
+username@system: fastboot flash vendor_boot vendor_boot-magisk_patched-26100.img                    1 ✘ 
+Sending 'vendor_boot_b' (22056 KB)                 OKAY [  0.897s]
+Writing 'vendor_boot_b'                            OKAY [  0.891s]
+Finished. Total time: 1.796s
+```
+
+```bash
+fastboot reboot
+```
+- Once system boots go to `Settings --> Apps --> See all apps --> Magisk --> Open
+- Allow Magisk to run Additional Setup, your device will reboot
+- Reopen Magisk and enjoy root access!
 
 <hr>
 
 
-### Step 8: Remap the Onn. 4k streaming box remote 
+### Step 6: Remap the Onn. 4k streaming box remote 
 
 Use [Remap-Remote-Buttons.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Remap-Remote-Buttons.sh) script to remap the remote buttons. When script is executed it will perform following actions:
 

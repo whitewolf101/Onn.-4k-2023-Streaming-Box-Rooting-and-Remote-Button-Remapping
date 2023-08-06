@@ -2,14 +2,11 @@
 
 #### Disclaimer
 
-<b>The content in this blog post is for educational purposes only. Use the content as per the regulations.</b> 
-
+<b>The content in this post is for educational purposes only. Use the content as per the regulations. This is a simple rework of the scripts provided [here] for my 2023 model Onn box, your milage may vary(https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping)</b> 
+-
 
 <hr>
 </br>
-In this blog post we'll see how we can setup root access and remap remote buttons on `Onn. 4k Streaming Box`. 
-
-We will use following steps to setup `Onn. 4k Streaming box`. All the scripts mentioned in this post can be found on my Github repo -> [Onn. 4k Streaming Box Rooting and Remote Button Remapping](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping)
 
 ### Step 1: Perform initial setup with upgrade and Google signin
 

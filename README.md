@@ -91,15 +91,12 @@ Now the boot loader is unlocked repeat [steps 1 and 2](https://github.com/whitew
 
 <hr>
 
-### Step 5: Setting up root 
+### Step 5: Rooting the device
 
-Use the [Set-Root.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Set-Root.sh) script. When script is executed it will perform following actions:
+First of all, thanks to the XDADevelopers user Functioner in [this thread](https://forum.xda-developers.com/t/walmart-onn-google-tv.4586587/post-88777153)
 
-- Download the Onn. 4k Streaming box firmware from [https://download.ods.ninja/Android/firmware/dopinder/dopinder-qt.20210519-factory.zip](https://download.ods.ninja/Android/firmware/dopinder/dopinder-qt.20210519-factory.zip)
-- Validate md5sum of the firmware with `08fa86ced3da6c50aafe8395fce27fe9`
-- Extract the firmware to current working directory
-- Download latest Magisk APK
-- Push `boot.img` and `Magisk.apk` to Onn. 4k streaming box via `adb push`
+- Download [Magisk Manager 26.1](https://github.com/topjohnwu/Magisk/releases/tag/v26.1) (Current version as of 8/6/23) from [here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/67702184/32b02342-3b4d-4b65-9daf-61a08ce313c8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T202836Z&X-Amz-Expires=300&X-Amz-Signature=7db1a17a8e917b131a67ca7cfb02d0364d8bf0ab34844841fe9d40eaae8abe16&X-Amz-SignedHeaders=host&actor_id=3161177&key_id=0&repo_id=67702184&response-content-disposition=attachment%3B%20filename%3DMagisk-v26.1.apk&response-content-type=application%2Fvnd.android.package-archive)
+- 
 
 <hr>
 

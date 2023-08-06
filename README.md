@@ -104,48 +104,6 @@ Use the [Set-Root.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting
 <hr>
 
 
-### Step 6: Build custom boot.img with Magisk (Steps to be performed on Onn. 4k streaming box)
-
-To build a custom boot.img file and get root perform following steps on Onn. 4k streaming box:
-
-1. Install a file browser from `Play Store`
-2. Open file browser and navigate to `/sdcard/Downloads/`
-3. Install `Magisk.apk`
-4. Open Magisk app 
-   <img src="https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/raw/main/Images/m1.png" width="100%">
-5. Click on the `Install` button next to Magisk heading
-   <img src="https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/raw/main/Images/m2.png" width="100%">
-6. Select the `/sdcard/Download/boot.img` in `Method` -> `Select and Patch a File` menu
-   <img src="https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/raw/main/Images/m3.png" width="100%">
-7. Click `LET'S GO` button
-
-Now we have the patched `boot.img` file stored in `/sdcard/Download/magisk_patched_*****.img`; we'll use it in our next step to obtain root access on Onn. 4k streaming box.
-
-   <img src="https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/raw/main/Images/m4.png" width="100%">
-
-<hr>
-
-
-### Step 7: Getting root access 
-
-Use the [Get-Root.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Get-Root.sh) script. When script is executed it will perform following actions:
-
-- Pull the patched `boot.img` file from Onn. 4k streaming box
-- flash the Onn. 4k streaming box with patched image using following commands:
-
-```bash
-adb pull /sdcard/Download/$(adb shell ls /sdcard/Download/ | grep magisk_patch) ./magisk-boot.img
-adb reboot bootloader
-fastboot flash boot magisk-boot.img
-fastboot reboot
-```
-
-Next the script will print output to let you know if root access is possible or not. 
-
-
-<hr>
-
-
 ### Step 8: Remap the Onn. 4k streaming box remote 
 
 Use [Remap-Remote-Buttons.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Remap-Remote-Buttons.sh) script to remap the remote buttons. When script is executed it will perform following actions:

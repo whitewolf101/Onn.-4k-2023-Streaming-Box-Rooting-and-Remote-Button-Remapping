@@ -164,29 +164,41 @@ This guide will cover using [Projectivity Launcher](https://play.google.com/stor
 
 Onn. 4k streaming box contains following pre-installed apps:
 
-1. YouTube TV
+1. YouTube
 2. Disney Plus
-3. HBO MAX
+3. MAX (formerly HBO MAX)
 4. YouTube Music
 5. HULU
 6. Google Play Games
-7. Default TV Launcher
-8. Netflix (Can not be removed for some reason)
+7. Google Play Movies & TV
+8. Apple TV
+9. ESPN
+10. Prime Video
+11. Paramount+
+12. Default TV Launcher
 
-Run [Remove-Bloatware.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Remove-Bloatware.sh) script to remove the pre-installed apps you do not need.
+Run [Remove-Bloatware.sh](https://github.com/whitewolf101/Onn.-4k-2023-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Remove-Bloatware.sh) script to remove the pre-installed apps you do not need.
 
 <hr>
 
 
 ### Step 10: Install some useful apps
 
-Use [Install-Useful-Apk.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Install-Useful-Apk.sh) to install the apps you like on your Android Tv. Here are some useful apps for the android TV:
+Personally these are apps I like to install once I am finished with setup!
 
-1. [SmartTubeNext](https://github.com/yuliskov/SmartTubeNext/releases/tag/14.96)
+- [SmartTubeNext](https://github.com/yuliskov/SmartTubeNext) [Install](https://github.com/yuliskov/SmartTubeNext#installation)
+- [FX File Manager](https://play.google.com/store/search?q=fx+file+explorer&c=apps&hl=en_US&gl=US)
+- [VLC](https://play.google.com/store/apps/details?id=org.videolan.vlc&hl=en_US&gl=US)
+- [Speed Test WiFi Analyzer](https://play.google.com/store/apps/details?id=com.analiti.fastest.android&hl=en_US&gl=US)
+- [Downloader by AFTV](https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en_US&gl=US)
+- [Plex](https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en_US&gl=US)
+- [Wireguard (for my travel device)](https://play.google.com/store/apps/details?id=com.wireguard.android&hl=en_US&gl=US)
 
 
-I hope you found these thing helpful. 
+<hr>
 
-Enjoy~ :)
 
-~ Amit Raut
+## Step 11: Enjoy
+
+
+Thats it, install whatever apps you like, hook it up to your tv perminatly with its USB brick and enjoy your customized ad-free $20 Android TV box! 

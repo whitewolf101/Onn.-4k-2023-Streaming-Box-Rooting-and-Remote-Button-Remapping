@@ -2,6 +2,7 @@
 
 # Remove bloadware from Onn. 4k streaming box
 # Author: Amit Raut
+# Edited by: Kali Lentz for the 2023 Onn TV Box  
 
 
 # Dictionary of pre-installed bloatware apps
@@ -9,12 +10,18 @@
 declare -A bw
 
 bw['YouTube TV']='com.google.android.youtube.tv'
+bw['Apple TV']='com.apple.atve.androidtv.appletv'
 bw['Disney']='com.disney.disneyplus'
-bw['HBO']='com.hbo.hbonow'
-bw['YouTube Music']='com.google.android.youtube.tvmusic'
+bw['ESPN']='com.espn.score_center'
 bw['HULU']='com.hulu.livingroomplus'
+bw['MAX (formerly HBO MAX)']='com.wbd.stream'
+bw['Paramount+']='com.cbs.ott'
+bw['Prime Video']='com.amazon.amazonvideo.livingroom'
+bw['YouTube Music']='com.google.android.youtube.tvmusic'
 bw['Play Games']='com.google.android.play.games'
-bw['Default TV Launcher']='com.google.android.tvlauncher'
+bw['Default TV Launcher']='com.google.android.apps.tv.launcherx'
+bw['Play Movies & TV']='com.google.android.videos'
+
 
 
 for i in "${!bw[@]}"; do

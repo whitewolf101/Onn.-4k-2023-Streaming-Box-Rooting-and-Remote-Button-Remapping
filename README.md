@@ -2,15 +2,17 @@
 
 #### Disclaimer
 
-<b>The content in this post is for educational purposes only. Use the content as per the regulations. This is a simple rework of the scripts provided [here] for my 2023 model Onn box, your milage may vary(https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping)</b> 
+<b>The content in this post is for educational purposes only. Use the content as per the regulations. This is a simple rework of the scripts provided [here](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping)  for my 2023 model Onn box, your milage may vary</b> 
 -
 
 <hr>
 </br>
+### Enviroment:
+I am doing this in a Linux enviroment (Manjaro Linux) with ADB & Fastboot installed via the android-tools package, I do not see any issues running this install on Windows but again, your milage may vary and all scripts are written for Linux so manual commands will have to be run manually as listed.
 
 ### Step 1: Perform initial setup with upgrade and Google signin
 
-Configure the Onn. 4k streaming device normally to setup remote and the initial Google signin. 
+Configure the Onn. 4k streaming device normally to setup remote and the initial Google signin. (This is required and can not be skipped, the update will not break the root (as of 8/6/2023)
 
 <hr>
 
@@ -20,15 +22,18 @@ Go to `Settings -> Device Preferences -> About -> Build` and press `Build` optio
 
 This should trigger a pop-up to allow USB debugging when the Onn. 4k streaming box is connected to a Linux system. Select always allow debugging option for the Linux system.
 
+Ensure your device is connected with 
+```bash
+adb devices
+```
 <hr>
 
 ### Step 3: Unlock boot loader
 
-To unlock boot loader use [Unblock-Bootloader.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Unlock-Bootloader.sh) script. When executed `Unlock-Bootloader.sh` script, the script will perform following actions:
-
 Unlock the bootloader with adb commands
 
 ```bash
+adb devices 
 adb reboot bootloader
 fastboot devices
 fastboot flashing unlock

@@ -87,7 +87,7 @@ fastboot reboot
 
 ### Step 4: Repeat Steps 1 and 2
 
-Now the boot loader is unlocked repeat steps 1 and 2 to setup the Onn. 4k streaming box again. We'll work on getting root access next.
+Now the boot loader is unlocked repeat [steps 1 and 2](https://github.com/whitewolf101/Onn.-4k-2023-Streaming-Box-Rooting-and-Remote-Button-Remapping#step-1-perform-initial-setup-with-upgrade-and-google-signin) to setup the Onn. 4k streaming box again. We'll work on getting root access next.
 
 <hr>
 

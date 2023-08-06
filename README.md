@@ -18,7 +18,9 @@ Configure the Onn. 4k streaming device normally to setup remote and the initial 
 
 ### Step 2: Enable Developer Option and USB debugging
 
-Go to `Settings -> Device Preferences -> About -> Build` and press `Build` option 7 times and you should see pop-up message as "You are a developer". After enabling Developer option go to `Settings -> Device Preferences -> Developer Options` and enable `USB debugging`.
+Go to `Settings -> Device Preferences -> About -> Build` and press `Build` option 7 times and you should see pop-up message as "You are a developer". After enabling Developer option go to `Settings -> Device Preferences -> Developer Options` and enable `USB debugging`
+
+Reboot the device
 
 This should trigger a pop-up to allow USB debugging when the Onn. 4k streaming box is connected to a Linux system. Select always allow debugging option for the Linux system.
 
@@ -26,17 +28,57 @@ Ensure your device is connected with
 ```bash
 adb devices
 ```
+you should expect to see 
+```bash
+username@system: adb devices                                                                                 
+List of devices attached
+GUSA2321006342  device
+```
+If you see
+```bash
+username@system: adb devices                                                                                 
+List of devices attached
+GUSA2321006342  unauthorized
+```
+ensure you allowed your computer to debug via ADB on the Onn TV box
 <hr>
 
 ### Step 3: Unlock boot loader
 
-Unlock the bootloader with adb commands
+Unlock the bootloader with adb commands <b>###THIS WILL FACTORY RESET THE DEVICE###</b>
 
 ```bash
-adb devices 
+adb devices
+```
+```bash
 adb reboot bootloader
+```
+Wait until the TV Device appears stuck at the 'onn.' boot screen
+```bash
 fastboot devices
+```
+Ensure you see your device, if not ensure Drivers are installed (on Windows) or try restarting the device and starting from Step 3
+```bash
 fastboot flashing unlock
+```
+You should see 
+```bash
+username@system: fastboot flashing unlock                                                                  
+OKAY [  0.290s]
+Finished. Total time: 0.290s
+```
+If you see an error, try re-running the command two more times (or until it says OKAY) then proceed on)
+```bash
+fastboot getvar unlocked
+```
+Expected result - 
+```bash
+fastboot getvar unlocked                                                                   
+unlocked: yes
+Finished. Total time: 0.002s
+```
+If you see "unlocked: no" - reboot and restart from Step 3, try running the fastboot unlock command more, until you recive an "OKAY" result
+```bash
 fastboot reboot
 ```
 

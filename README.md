@@ -128,19 +128,39 @@ fastboot reboot
 
 ### Step 6: Remap the Onn. 4k streaming box remote 
 
-Use [Remap-Remote-Buttons.sh](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Remap-Remote-Buttons.sh) script to remap the remote buttons. When script is executed it will perform following actions:
+Use [Remap-Remote-Buttons.sh](https://github.com/whitewolf101/Onn.-4k-2023-Streaming-Box-Rooting-and-Remote-Button-Remapping/blob/main/Remap-Remote-Buttons.sh) script to remap the remote buttons. When the script is executed you will need to Allow ADB to execute commands as root by selecting `grant` on the on screen popup, the script will then 
 
-- Copies the `onntvremap` folder in to `/sdcard/Download`
-- Moves the `onntvremap` folder to `/data/adb/modules/` directory as root user
+- Copy the `onntvremap` folder in to `/sdcard/Download`
+- Move the `onntvremap` folder to `/data/adb/modules/` directory as root user
 - Reboot the device
 
-Once the device comes back online. No button mapping will be present for the buttons like `YouTube`, `Netflix`, `Disney+`, `HBOMAX`. Install `Button Mapper` application from `Play Store`, grant superuser access to `Button Mapper` and remap the buttons on the remote as per your liking.
+Once the device comes back online. No button mapping will be present for the buttons like `YouTube`, `Netflix`, `Disney+`, `HBOMAX`. Install [Button Mapper](https://play.google.com/store/apps/details?id=flar2.homebutton&hl=en_US&gl=US) application from the Play Store, grant superuser access to `Button Mapper` and remap the buttons on the remote as per your liking.
 
+- Open Buttonmapper
+- Select the hambuger menu in the top right
+
+- Select `Check for Root`
+
+- Select `Grant` to allow ButtonMapper SuperUser Access
+
+- Congrats! Setup your new buttons and enjoy your custom remote
+<hr>
+
+
+### Step 7: Install a new Launcher & Setup the Launcher
+
+This guide will cover using [Projectivity Launcher](https://play.google.com/store/search?q=Projectivity%20Launcher&c=apps&hl=en_US&gl=US) as this is what I personally like
+
+- Install [Projectivity Launcher](https://play.google.com/store/search?q=Projectivity%20Launcher&c=apps&hl=en_US&gl=US) on your device from the Play Store
+- Launch Projectivity Launcher and go through setup/tutorial, allow & grant any access it wants, also be sure to scroll to `System --> Accessibility Service --> Show Accessibility settings --> Yes --> Projectivy Launcher --> Enable` press back until you are back at the Projectivity Launcher home page
+- Scroll to `Projectivy Launcher Settings --> General` and select `Override Current Launcher` also if the option is there to select a default launcher do that at this time, that option showed up the second time I opened the menu so your milage may vary
+- Reboot device and make sure it launches Projectivity on boot and that the home button only opens Projectivity as the next step will remove the default ad filled launcher
 
 <hr>
 
 
-### Step 9: Remove bloatware from Onn. 4k streaming box
+
+### Step 8: Remove bloatware from Onn. 4k streaming box
 
 Onn. 4k streaming box contains following pre-installed apps:
 

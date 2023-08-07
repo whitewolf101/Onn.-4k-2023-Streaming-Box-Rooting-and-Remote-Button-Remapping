@@ -7,12 +7,12 @@
 
 <hr>
 </br>
-### Enviroment:
-I am doing this in a Linux enviroment (Manjaro Linux) with ADB & Fastboot installed via the android-tools package, I do not see any issues running this install on Windows but again, your milage may vary and all scripts are written for Linux so manual commands will have to be run manually as listed. I am using a MicroUSB cable to connect the TV box to my PC, it seems to also provide enough power over the USB 2.0 port to power the device
+### Environment:
+I am doing this in a Linux environment (Manjaro Linux) with ADB & Fastboot installed via the android-tools package, I do not see any issues running this install on Windows but again, your milage may vary and all scripts are written for Linux so manual commands will have to be run manually as listed. I am using a MicroUSB cable to connect the TV box to my PC, it seems to also provide enough power over the USB 2.0 port to power the device
 
-### Step 1: Perform initial setup with upgrade and Google signin
+### Step 1: Perform initial setup with upgrade and Google sign in
 
-Configure the Onn. 4k streaming device normally to setup remote and the initial Google signin. (This is required and can not be skipped, the update will not break the root (as of 8/6/2023)
+Configure the Onn. 4k streaming device normally to setup remote and the initial Google sign in. (This is required and can not be skipped, the update will not break the root (as of 8/6/2023)
 
 <hr>
 
@@ -77,7 +77,7 @@ fastboot getvar unlocked
 unlocked: yes
 Finished. Total time: 0.002s
 ```
-If you see "unlocked: no" - reboot and restart from Step 3, try running the fastboot unlock command more, until you recive an "OKAY" result
+If you see "unlocked: no" - reboot and restart from Step 3, try running the fastboot unlock command more, until you receive an "OKAY" result
 ```bash
 fastboot reboot
 ```
@@ -201,4 +201,4 @@ Personally these are apps I like to install once I am finished with setup!
 ## Step 11: Enjoy
 
 
-Thats it, install whatever apps you like, hook it up to your tv perminatly with its USB brick and enjoy your customized ad-free $20 Android TV box! 
+Thats it, install whatever apps you like, hook it up to your tv with its USB brick and enjoy your customized ad-free $20 Android TV box!

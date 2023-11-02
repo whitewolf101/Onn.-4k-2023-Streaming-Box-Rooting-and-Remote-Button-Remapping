@@ -8,7 +8,7 @@
 <hr>
 </br>
 ### Environment:
-I am doing this in a Linux environment (Manjaro Linux) with ADB & Fastboot installed via the android-tools package, I do not see any issues running this install on Windows but again, your milage may vary and all scripts are written for Linux so manual commands will have to be run manually as listed. I am using a MicroUSB cable to connect the TV box to my PC, it seems to also provide enough power over the USB 2.0 port to power the device
+I am doing this in a Linux environment (Manjaro Linux) with ADB & Fastboot installed via the android-tools package, I do not see any issues running this install on Windows but again, your milage may vary and all scripts are written for Linux so commands will not be the same as listed in this guide. I am using a MicroUSB cable to connect the TV box to my PC, it seems to also provide enough power over the USB 2.0 port to power the device
 
 ### Step 1: Perform initial setup with upgrade and Google sign in
 

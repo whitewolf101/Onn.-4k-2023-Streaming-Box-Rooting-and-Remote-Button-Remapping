@@ -95,7 +95,7 @@ Now the boot loader is unlocked repeat [steps 1 and 2](https://github.com/whitew
 
 First of all, thanks to the XDADevelopers user Functioner in [this thread](https://forum.xda-developers.com/t/walmart-onn-google-tv.4586587/post-88777153)
 
-- Download [Magisk Manager 26.1](https://github.com/topjohnwu/Magisk/releases/tag/v26.1) (Current version as of 8/6/23) from [here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/67702184/32b02342-3b4d-4b65-9daf-61a08ce313c8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T202836Z&X-Amz-Expires=300&X-Amz-Signature=7db1a17a8e917b131a67ca7cfb02d0364d8bf0ab34844841fe9d40eaae8abe16&X-Amz-SignedHeaders=host&actor_id=3161177&key_id=0&repo_id=67702184&response-content-disposition=attachment%3B%20filename%3DMagisk-v26.1.apk&response-content-type=application%2Fvnd.android.package-archive)
+- Download [Magisk Manager 26.1](https://github.com/topjohnwu/Magisk/releases/tag/v26.1) (Current version as of 11/24/23) from [here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/67702184/32b02342-3b4d-4b65-9daf-61a08ce313c8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T202836Z&X-Amz-Expires=300&X-Amz-Signature=7db1a17a8e917b131a67ca7cfb02d0364d8bf0ab34844841fe9d40eaae8abe16&X-Amz-SignedHeaders=host&actor_id=3161177&key_id=0&repo_id=67702184&response-content-disposition=attachment%3B%20filename%3DMagisk-v26.1.apk&response-content-type=application%2Fvnd.android.package-archive)
 - Download [vendor_boot-magisk_patched-26100.img](https://github.com/whitewolf101/Onn.-4k-2023-Streaming-Box-Rooting-and-Remote-Button-Remapping/raw/main/vendor_boot-magisk_patched-26100.img)
 - Ensure your terminal is in the same location you downloaded the APK & Image to, then run
 ```bash
@@ -134,7 +134,7 @@ Use [Remap-Remote-Buttons.sh](https://github.com/whitewolf101/Onn.-4k-2023-Strea
 - Move the `onntvremap` folder to `/data/adb/modules/` directory as root user
 - Reboot the device
 
-Once the device comes back online. No button mapping will be present for the buttons like `YouTube`, `Netflix`, `Disney+`, `HBOMAX`. Install [Button Mapper](https://play.google.com/store/apps/details?id=flar2.homebutton&hl=en_US&gl=US) application from the Play Store, grant superuser access to `Button Mapper` and remap the buttons on the remote as per your liking.
+Once the device comes back online. No button mapping will be present for the buttons like `YouTube`, `Netflix`, `Disney+`, `Paramount+`. Install [Button Mapper](https://play.google.com/store/apps/details?id=flar2.homebutton&hl=en_US&gl=US) application from the Play Store, grant superuser access to `Button Mapper` and remap the buttons on the remote as per your liking.
 
 - Open Buttonmapper
 - Select the hambuger menu in the top right

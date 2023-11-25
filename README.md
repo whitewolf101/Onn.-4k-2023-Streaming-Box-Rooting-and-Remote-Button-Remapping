@@ -12,7 +12,7 @@ I am doing this in a Linux environment (Manjaro Linux) with ADB & Fastboot insta
 
 ### Step 1: Perform initial setup with upgrade and Google sign in
 
-Configure the Onn. 4k streaming device normally to setup remote and the initial Google sign in. (This is required and can not be skipped, the update will not break the root (as of 8/6/2023)
+Configure the Onn. 4k streaming device normally to setup remote and the initial Google sign in. (This is required and can not be skipped, the update will not break the root (as of 11/24/2023)
 
 <hr>
 
@@ -94,8 +94,10 @@ Now the boot loader is unlocked repeat [steps 1 and 2](https://github.com/whitew
 ### Step 5: Rooting the device
 
 First of all, thanks to the XDADevelopers user Functioner in [this thread](https://forum.xda-developers.com/t/walmart-onn-google-tv.4586587/post-88777153)
+<br><br/>
+<b> NOTICE - Please ensure you use Magisk 26.1, the vendor_boot.img is spesificly tied to this version! I have attempted to create a vendor_boot.img for Magisk 26.4 with no success </b>
 
-- Download [Magisk Manager 26.1](https://github.com/topjohnwu/Magisk/releases/tag/v26.1) (Current version as of 11/24/23) from [here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/67702184/32b02342-3b4d-4b65-9daf-61a08ce313c8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T202836Z&X-Amz-Expires=300&X-Amz-Signature=7db1a17a8e917b131a67ca7cfb02d0364d8bf0ab34844841fe9d40eaae8abe16&X-Amz-SignedHeaders=host&actor_id=3161177&key_id=0&repo_id=67702184&response-content-disposition=attachment%3B%20filename%3DMagisk-v26.1.apk&response-content-type=application%2Fvnd.android.package-archive)
+- Download [Magisk Manager 26.1](https://github.com/topjohnwu/Magisk/releases/tag/v26.1) (Currently the only supported version for this device) from [here](https://objects.githubusercontent.com/github-production-release-asset-2e65be/67702184/32b02342-3b4d-4b65-9daf-61a08ce313c8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230806%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T202836Z&X-Amz-Expires=300&X-Amz-Signature=7db1a17a8e917b131a67ca7cfb02d0364d8bf0ab34844841fe9d40eaae8abe16&X-Amz-SignedHeaders=host&actor_id=3161177&key_id=0&repo_id=67702184&response-content-disposition=attachment%3B%20filename%3DMagisk-v26.1.apk&response-content-type=application%2Fvnd.android.package-archive)
 - Download [vendor_boot-magisk_patched-26100.img](https://github.com/whitewolf101/Onn.-4k-2023-Streaming-Box-Rooting-and-Remote-Button-Remapping/raw/main/vendor_boot-magisk_patched-26100.img)
 - Ensure your terminal is in the same location you downloaded the APK & Image to, then run
 ```bash

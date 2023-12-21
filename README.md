@@ -184,7 +184,7 @@ Run [Remove-Bloatware.sh](https://github.com/whitewolf101/Onn.-4k-2023-Streaming
 <hr>
 
 
-### Step 10: Install some useful apps
+### Step 9: Install some useful apps
 
 Personally these are apps I like to install once I am finished with setup!
 
@@ -200,7 +200,7 @@ Personally these are apps I like to install once I am finished with setup!
 <hr>
 
 
-## Step 11: Enjoy
+## Step 10: Enjoy
 
 
 Thats it, install whatever apps you like, hook it up to your tv with its USB brick and enjoy your customized ad-free $20 Android TV box!

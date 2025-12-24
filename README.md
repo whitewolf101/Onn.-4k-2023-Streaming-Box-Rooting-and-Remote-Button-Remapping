@@ -1,5 +1,7 @@
 # Onn. 4k Streaming Box Rooting and Remote Button Remapping + Useful Android Tv Scripts
 
+## NOTICE - This no longer works when last tested - archiving this so if someone manages to find it helpful somehow they can still use it
+
 #### Disclaimer
 
 <b>The content in this post is for educational purposes only. Use the content as per the regulations. This is a simple rework of the scripts provided [here](https://github.com/amit-raut/Onn.-4k-Streaming-Box-Rooting-and-Remote-Button-Remapping)  for my 2023 model Onn box, your milage may vary</b> 
